@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Water Availability In India</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 800;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .text-box{
+    position: relative;
+    max-width: 600px;
+}
+.container .text-box h2{
+    color: #333;
+    font-size: 4em;
+    font-weight: 500px;
+}
+.container .text-box h2 span{
+    color: #11c7ff;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.container .text-box p{
+    color: #333;
+}
+.container .text-box a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #11c7ff;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.container .img-box{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-left: 500px;
+    margin-top: 50px;
+}
+.container .img-box img{
+    height: 650px;
+    width:650px;
+    right: auto;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 100px;
+
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #11c7ff;
+    clip-path: circle(600px at right 800px);
+}
+h1{
+    text-align: center;
+    
+}
+p{
+    text-size-adjust: 10px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+    </style>
+</head>
+<body>
+    <h1>
+        Water Availability In India
+    </h1>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Screenshot_2024-04-22_011724-removebg-preview.png" class="logo"></a>
+            <ul>
+                <li><a href="viraj.html">Home</a></li>
+                <li><a href="landingpage.html">Govt. Websites</a></li>
+                <li><a href="https://nwic.gov.in/data">What's New</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="text-box">
+                <h2>Get Full Access To<br> All The Stuffs Related To  <span>Water Availability In India.</span></h2>
+                <p>Water availability in India is a critical issue that affects the lives of millions of people. Despite being a country with a vast coastline and numerous rivers, water scarcity is a growing concern in India.</p>
+                <a href="learnmorepage.html">learn More</a>
+            </div>
+            <div class="img-box">
+                <img src="Screenshot_2024-04-22_015812-removebg-preview.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="water-modified.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="Screenshot 2024-04-22 013527-modified.png" onclick="imgSlider('img2.png');changeCircleColor('#0eb7495')"></li>
+            <li><img src="Screenshot 2024-04-22 014217-modified.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+       
+    </section>
+</body>
+</html>
